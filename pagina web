@@ -1,2 +1,137 @@
 # ivanna-castelo
 pagina web
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Escasez de Agua</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#f4f4f4;
+}
+
+#inicio{
+    text-align:center;
+    margin-top:200px;
+}
+
+button{
+    padding:15px 30px;
+    font-size:20px;
+    background:#2196F3;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1976D2;
+}
+
+#contenido{
+    display:none;
+    padding:20px;
+}
+
+section{
+    background:white;
+    margin:20px auto;
+    padding:20px;
+    border-radius:10px;
+    max-width:900px;
+}
+
+img{
+    width:100%;
+    max-width:500px;
+    display:block;
+    margin:auto;
+    border-radius:10px;
+}
+</style>
+</head>
+
+<body>
+
+<div id="inicio">
+    <h1>Proyecto: Escasez de Agua</h1>
+    <button onclick="mostrarContenido()">Abrir Proyecto</button>
+</div>
+
+<div id="contenido">
+
+    <h1 style="text-align:center;">La Escasez de Agua</h1>
+
+    <section>
+        <h2>1. ¿Qué es la escasez de agua?</h2>
+        <p>
+            La escasez de agua ocurre cuando la cantidad disponible no es suficiente
+            para cubrir las necesidades de la población.
+        </p>
+        <img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35">
+    </section>
+
+    <section>
+        <h2>2. Causas de la escasez de agua</h2>
+        <p>
+            Entre las principales causas se encuentran el cambio climático,
+            la contaminación y el uso excesivo del agua.
+        </p>
+        <img src="https://images.unsplash.com/photo-1473773508845-188df298d2d1">
+    </section>
+
+    <section>
+        <h2>3. Consecuencias</h2>
+        <p>
+            Puede provocar problemas de salud, pérdidas agrícolas y daños
+            al medio ambiente.
+        </p>
+        <img src="https://images.unsplash.com/photo-1527066579998-dbbae57f45ce">
+    </section>
+
+    <section>
+        <h2>4. Soluciones</h2>
+        <p>
+            Ahorrar agua, reparar fugas y reutilizarla son acciones que ayudan
+            a reducir este problema.
+        </p>
+        <img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0">
+    </section>
+
+    <section>
+        <h2>5. Importancia del cuidado del agua</h2>
+        <p>
+            El agua es esencial para la vida y debemos usarla de manera responsable.
+        </p>
+        <img src="https://images.unsplash.com/photo-1437482078695-73f5ca6c96e2">
+    </section>
+
+    <section>
+        <h2>Video sobre la escasez de agua</h2>
+
+        <iframe width="560" height="315"
+       src="https://www.youtube.com/embed/Wka0KQmCL3w"
+       title="Video de YouTube"
+       frameborder="0"
+      allowfullscreen>
+      </iframe>
+
+    </section>
+
+</div>
+
+<script>
+function mostrarContenido(){
+    document.getElementById("inicio").style.display = "none";
+    document.getElementById("contenido").style.display = "block";
+}
+</script>
+
+</body>
+</html>
+
